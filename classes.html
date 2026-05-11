@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <title>Classes | BFII Tips</title>
+
+    <link rel="stylesheet" href="assets/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background"></div>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">BFII Tips</a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tips.html">Tips</a>
+        <a href="classes.html">Classes</a>
+        <a href="about.html">About</a>
+        <a href="credits.html">Credits</a>
+    </div>
+</nav>
+
+<main class="page">
+
+    <section id="class-selection">
+
+        <section class="hero">
+            <p class="eyebrow">Class Encyclopedia</p>
+
+            <h1>Choose your disaster.</h1>
+
+            <p class="hero-text">
+                Select a class below to read a full breakdown, examples, strengths, weaknesses, and terrible decisions to avoid.
+            </p>
+        </section>
+
+        <div class="wide-image-card">
+    <img src="media/classes-troopers-battlefront.jpg" alt="Battlefront II troopers">
+</div>
+
+        <section class="class-grid">
+
+            <button class="class-box" onclick="openClass('assault')">
+                <span class="tag">Assault</span>
+                <h2>Frontline aggression.</h2>
+                <p>Fast, dangerous, and usually overconfident.</p>
+            </button>
+
+            <button class="class-box" onclick="openClass('heavy')">
+                <span class="tag">Heavy</span>
+                <h2>May's Class</h2>
+                <p>Large weaponry and emotional support shields.</p>
+            </button>
+
+            <button class="class-box" onclick="openClass('officer')">
+                <span class="tag">Officer</span>
+                <h2>The support gremlin.</h2>
+                <p>Buff teammates and print battle points.</p>
+            </button>
+
+            <button class="class-box" onclick="openClass('specialist')">
+                <span class="tag">Specialist</span>
+                <h2>Long-range suffering.</h2>
+                <p>Sniping, scouting, and missing easy shots.</p>
+            </button>
+
+        </section>
+
+    </section>
+
+    <section id="class-article" class="hidden">
+
+        <button class="back-button" onclick="closeClass()">
+            ← Go Back
+        </button>
+
+        <div class="article-card">
+
+            <span class="tag" id="article-tag">Class</span>
+
+            <h1 id="article-title">Title</h1>
+
+            <p id="article-intro">
+                Intro text.
+            </p>
+
+            <div class="article-section">
+                <h3>What this class does</h3>
+
+                <p id="article-role"></p>
+            </div>
+
+            <div class="article-section">
+                <h3>Example situations</h3>
+
+                <p id="article-example"></p>
+            </div>
+
+            <div class="article-section">
+                <h3>Common mistakes</h3>
+
+                <p id="article-mistakes"></p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>
